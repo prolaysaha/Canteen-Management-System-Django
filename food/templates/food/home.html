@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div ><h1> TODAY'S MENU   </h1></div> 
+
+<form>
+    <h3>SOUTH INDIAN :</h3>
+ <div class="radio-group">
+<input type="radio" id="option-one" value="Manager" name="selector"><label for="option-one">Tiffin</label><br>
+<input type="radio" id="option-two" value="Employee" name="selector"><label for="option-two">THALI</label><br>
+<input type="radio" id="option-three" value="Staff" name="selector"><label for="option-three">LAUNCH</label>
+  </div>
+  <br> 
+      
+  <button style="font-size: large;color: rgb(18, 19, 18);background-color: aquamarine;" type="button" onclick="displayRadioValue()"> 
+      Submit 
+  </button> 
+    
+  <br>
+  
+  <div id="result"></div>
+  <script> 
+    function displayRadioValue() { 
+        var ele = document.getElementsByName('selector'); 
+          
+        for(i = 0; i < ele.length; i++) { 
+            if(ele[i].checked) 
+            document.getElementById("result").innerHTML
+                    = "<h5>Designation:"+ele[i].value; 
+        } 
+    } 
+  </script>
+   </form>
+
+
+<form>
+    <h3>NORTH INDIAN :</h3>
+ <div class="radio-group">
+<input type="radio" id="option-one" value="Manager" name="selector"><label for="option-one">Tiffin</label><br>
+<input type="radio" id="option-two" value="Employee" name="selector"><label for="option-two">THALI</label><br>
+<input type="radio" id="option-three" value="Staff" name="selector"><label for="option-three">LAUNCH</label>
+  </div>
+  <br> 
+      
+  <button style="font-size: large;color: rgb(18, 19, 18);background-color: aquamarine;" type="button" onclick="displayRadioValue()"> 
+      Submit 
+  </button> 
+    
+  <br>
+  
+  <div id="result"></div>
+  <script> 
+    function displayRadioValue() { 
+        var ele = document.getElementsByName('selector'); 
+          
+        for(i = 0; i < ele.length; i++) { 
+            if(ele[i].checked) 
+            document.getElementById("result").innerHTML
+                    = "<h5>Designation:"+ele[i].value; 
+        } 
+    } 
+  </script>
+   </form>
+
+<form>
+    <h3>CHINESE :</h3>
+ <div class="radio-group">
+<input type="radio" id="option-one" value="Manager" name="selector"><label for="option-one">Tiffin</label><br>
+<input type="radio" id="option-two" value="Employee" name="selector"><label for="option-two">THALI</label><br>
+<input type="radio" id="option-three" value="Staff" name="selector"><label for="option-three">LAUNCH</label>
+  </div>
+  <br> 
+      
+  <button style="font-size: large;color: rgb(18, 19, 18);background-color: aquamarine;" type="button" onclick="displayRadioValue()"> 
+      Submit 
+  </button> 
+    
+  <br>
+  
+  <div id="result"></div>
+  <script> 
+    function displayRadioValue() { 
+        var ele = document.getElementsByName('selector'); 
+          
+        for(i = 0; i < ele.length; i++) { 
+            if(ele[i].checked) 
+            document.getElementById("result").innerHTML
+                    = "<h5>Designation:"+ele[i].value; 
+        } 
+    } 
+  </script>
+   </form>
+  
+  
+
+
+{% endblock %}
